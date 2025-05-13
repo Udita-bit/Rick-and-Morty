@@ -1,6 +1,6 @@
 import React from 'react';
 
-export function LandingPage() {
+export default function LandingUI() {
   return (
     <div className="flex h-screen w-screen overflow-hidden">
       
@@ -31,4 +31,3 @@ export function LandingPage() {
     </div>
   );
 }
-
