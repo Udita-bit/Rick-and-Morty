@@ -1,30 +1,18 @@
 import Link from "next/link";
-
+import { NAV_LINKS } from "../constants/index";
 export default function FooterUI(){
   return (
     <div className="border-b-black bg-black ">
       
-        <ul className=" h-full gap-12 xl:flex bg-black p-12 justify-center">
-                    <Link href="/about">
-                    <li className="ml-10  hover:border-b border-white text-xl
-                    onclick={handle}"> 
-                        Why Us
-                    </li>
+        <ul className="sm:flex-1/2 text-center space-x-2 text-white h-full gap-12 xl:flex bg-black p-12 justify-evenly items-center ">
+                     {NAV_LINKS.map((link)=>(
+                    <Link href={link.href} key={link.key} className="flexCenter cursor-pointer text-white ml-10 hover:font-bold hover:border-b border-white text-xl" >
+                    {link.label}
                     </Link>
-                    
-
-                    <Link href="/Favourites">
-                    <li className="ml-10 uppercase hover:border-b border-white text-xl">
-                        Favourite</li>
-                    </Link>
-
-                    <Link href="/help">
-                    <li className="ml-10 uppercase hover:border-b border-white text-xl">
-                        Help</li>
-                    </Link>
+                    ))}
          </ul>
         
-        <div className="border-t-2 bg-green-600">
+        <div className=" p-4 border-t-2 bg-green-600">
           <p className="text-center">All Copyrights Resrved</p>
         </div>
       

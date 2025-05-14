@@ -1,12 +1,18 @@
+import Favourite from "../../components/favourite";
+import Guide from "../../components/guide";
+import Hero from "../../components/Hero";
+import Camp from "../../components/camp";
+import Character from "../../components/characters";
 
-import LandingUI from "../../components/landingUI";
-
-
+ 
 export default function Home(){
     return(
-        <div>
-            <LandingUI/>
-        </div>
+    <div>
+        <Hero/>
+        <Camp/>
+        <Character/>
+        <Favourite/>
+        <Guide/>
+    </div>
     )
-
 }
