@@ -1,7 +1,9 @@
 import React from 'react';
+import Button from './button';
 
 export default function Hero() {
   return (
+    <section id="home">
     <div className="flex h-screen w-screen overflow-hidden">
       
       <div className="w-3/4 h-full">
@@ -23,11 +25,10 @@ export default function Hero() {
             dodge aliens, and break every rule of reality. Sci-fi, chaos, and dark humor collide in this 
             animated cult phenomenon.
           </p>
-          <button className="mt-6 w-full py-2 px-4 bg-blue-500 hover:bg-blue-600 text-white font-semibold rounded-lg shadow-md focus:outline-none focus:ring-2 focus:ring-blue-400 focus:ring-opacity-75">
-            Know them
-          </button>
+          <Button/>
         </div>
       </div>
     </div>
+    </section>
   );
 }

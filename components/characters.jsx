@@ -1,5 +1,3 @@
-
-
 "use client";
 import Link from "next/link";
 import { CARDS } from "../constants/index";
@@ -20,7 +18,8 @@ export default function Character() {
   const maskImage = useScrollOverflowMask(scrollXProgress);
 
   return (
-    <div className="pt-5 relative w-full max-w-[100vw]  p-4">
+    
+    <div className="pt-5 relative w-full max-w-[100vw]  mt-10 p-4">
       {/* Circular Scroll Indicator */}
       <svg
         className="absolute -top-12 left-4 rotate-[-90deg] z-10"
@@ -120,8 +119,10 @@ function useScrollOverflowMask(scrollXProgress) {
 }
 
 {CARDS.map((link)=>(
-<Link href={link.href} key={link.key} className=" mb-6 flexCenter cursor-pointer text-white ml-10 hover:font-bold hover:border-b border-white text-xl" >
+<Link href={link.href} key={link.key} className=" mb-6 flexCenter cursor-pointer text-white ml-10 hover:font-bold
+ hover:border-b border-white text-xl" >
 {link.label}
 </Link>
 ))}
+
 

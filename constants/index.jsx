@@ -1,9 +1,9 @@
-export const NAV_LINKS =[
-    {href:"/", key:"home",label:"Home"},
-    {href: "/",key:"why_Us",label:"Why us?"},
-    {href:'/',key:"favourute",label:"Favourite"},
-    {href:'/',key:"help",label:"Help"},
+export const NAV_LINKS = [
+  { href: "/#home", id: "home", key: "home", label: "Home" },
+  // { href: "/search", id: "search", key: "search", label: "Search" },
+  // { href: "/guide", id: "documentation", key: "docs", label: "Guide" },
 ];
+
 
 export const CARDS = [
   {

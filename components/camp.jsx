@@ -1,6 +1,7 @@
 import Image from "next/image"
 export default function Camp(){
     return(
+        <section id="why_us mb-20">
         <div className="flex">
         <div className="border-1 border-b-amber-50 2xl:max-container relative flex flex=col py-10
         lg:mb-10 lg:py-15 xl:mb-20">
@@ -13,6 +14,7 @@ export default function Camp(){
             
             </div>
             </div>
+            </section>
         
     )
 }
